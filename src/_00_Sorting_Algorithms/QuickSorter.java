@@ -38,6 +38,7 @@ public class QuickSorter extends Sorter {
         		int num = array[i];
         		array[i] = array[j];
         		array[j] = num;
+        		display.updateDisplay();
         		i++;
         		j--;
         	}
