@@ -29,27 +29,26 @@ public class MergeSorter extends Sorter {
 				temp[m] = array[m];
 			}
 			int i = low;
-			int j = middle;
-			int k = high;
+			int j = middle + 1;
+			int k = low;
 			while( i <= middle && j <= high) {
 				if(temp[i] <= temp[j]) {
 					array[k] = temp[i];
 					i++;
-					display.updateDisplay();
 				}
 				else {
 					array[k] = temp[j];
 					j++;
-					display.updateDisplay();
 				}
 				k++;
-				while(i <= middle) {
-					array[k] = temp[i];
-					k++;
-					i++;;
-					display.updateDisplay();
-				}
+				display.updateDisplay();
 			}
+			while(i <= middle) {
+				array[k] = temp[i];
+				k++;
+				i++;;
+			}
+			display.updateDisplay();
 		}
 			//3. Create an integer called middle and set it 
 			//   equal to the half way point between low and high

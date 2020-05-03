@@ -28,10 +28,10 @@ public class QuickSorter extends Sorter {
 		
         //4. make a while loop that goes while i is less than or equal to j
         while( i <= j) {
-        	while(i < pivot) {
+        	while(array[i] < pivot) {
         		i++;
         	}
-        	while(j >= pivot) {
+        	while(array[j] > pivot) {
         		j--;
         	}
         	if(i <= j) {
