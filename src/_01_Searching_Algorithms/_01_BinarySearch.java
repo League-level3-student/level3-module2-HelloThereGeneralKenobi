@@ -23,7 +23,7 @@ public class _01_BinarySearch {
 			if( array[mid] > value) {
 				return binarySearch(array, start, mid - 1, value);
 			}
-			return binarySearch(array, mid + 1, pass, value);
+			return binarySearch(array, mid + 1, end, value);
 		}
 		
 			//3. create an integer called mid and set it equal
